@@ -1,0 +1,3 @@
+gradio>=5
+groq>=0.11
+edge-tts>=6.1
