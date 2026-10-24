@@ -44,7 +44,7 @@ export GROQ_API_KEY=...   # free at console.groq.com, no card needed. Without it
 .venv/bin/python app.py
 ```
 
-On Hugging Face Spaces, add `GROQ_API_KEY` as a secret in the Space settings. It is never stored in the code.
+To host it free, deploy the repo on Render (the included `render.yaml` sets it up) and add `GROQ_API_KEY` as an environment variable in the Render dashboard. It is never stored in the code.
 
 ## Data
 

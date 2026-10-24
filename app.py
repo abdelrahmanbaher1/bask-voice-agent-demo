@@ -224,4 +224,6 @@ with gr.Blocks(title="Bask Health voice agent demo") as demo:
         demo.load(on_dashboard, None, [summary, turns, alerts, emails])
 
 if __name__ == "__main__":
-    demo.launch(theme=THEME, css=CSS)
+    port = os.getenv("PORT")  # set by Render and similar hosts
+    demo.launch(theme=THEME, css=CSS, server_name="0.0.0.0" if port else None,
+                server_port=int(port) if port else None)
